@@ -1,2 +1,2 @@
 # progs_in_j
-Programs to Java 
+Programs in Java 
