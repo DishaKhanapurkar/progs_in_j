@@ -1,0 +1,39 @@
+class getnth
+{
+    //Function to find the data of nth node from the end of a linked list.
+    int getNthFromLast(Node head, int n)
+    {
+    	// Your code here
+    	int c=0;
+    	Node cur=head;
+    	while(cur!=null){
+    	     c++;
+    	     cur=cur.next;
+    	}  
+    	cur=head;
+    	if(c>=n){
+    	    for(int i=1;i<=c-n;i++){
+    	        cur=cur.next;
+    	        
+    	    }
+    	    return cur.data;
+    	}
+    	else
+    	{
+    	    return -1;
+    	}
+    	
+    	}
+    	
+    
+}
+//------------------------------
+/* Structure of node
+
+class Node
+{
+    int data;
+    Node next;
+    Node(int d) {data = d; next = null; }
+}
+*/
