@@ -1,0 +1,13 @@
+
+class Solution 
+{
+    //Function to reverse words in a given string.
+    String reverseWords(String S)
+    {
+        // code here
+        String strings[]=S.split(".");
+        Collections.reverse(Arrays.asList(strings));
+        String reversedString=String.join(".",Arrays.asList(strings));
+        return reversedString;
+    }
+}
